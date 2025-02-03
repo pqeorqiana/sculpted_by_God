@@ -1,0 +1,33 @@
+/* Set the background color to black */
+body {
+  background-color: black;
+}
+
+/* Style the container */
+.container {
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.topbar .person-outline {
+  font-size: 24px;
+  color: white;
+}
+
+.topbar .back-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}

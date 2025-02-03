@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	outline: none;
+	color: #fff;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--prime: #FCC01E;
+}
+body{
+	background-color: #000000;
+}
+/*---------------------------------------------style bara de navigare------------------------------------------*/
+.navbar{
+	width: 100%;
+	display: flex;
+	position: fixed;
+	padding: 30px 120px;
+	background-color: transparent;
+	justify-content: space-between;
+	z-index: 1111;
+	transition: 0.5s ease; 
+}
+.navbar.sticky{
+	padding: 6px 60px;
+	background: #000000;
+	box-shadow: 0 0 15px rgba(252, 210, 97,128.5);
+}
+.navbar.sticky .logo{
+	font-size: 2em;
+	color: var(--prime);
+}
+.navbar.sticky .logo B{
+	color: #fff;
+}
+/*-----------------------------------------------style logo------------------------------------------------*/
+.logo{
+	font-size: 2.8em;
+	font-weight: 800;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;	
+}
+.logo B{
+	color: var(--prime);
+}
+ol{
+	display: flex;
+	margin: auto 0;
+}
+ol li{
+	list-style: none;
+	margin-right: 20px;
+}
+ol li a{
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*hover = culoarea elementului cand mergi cu mouse-ul peste el*/
+ol li:hover a{
+	color: var(--prime);	
+}
+/*---------------------------------------------marimea pt toate sectiunile----------------------------------------*/
+.view{
+	width: 100%;
+	min-height: 80vh;
+	position: relative;
+}
+/*---------------------------------------------style pt sectiunea home-----------------------------------------*/
+.home{
+	display: flex;
+	min-height: 120vh;
+	align-items: center;
+	justify-content: center;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+}
+.banner{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: url(greek.jpg);
+	background-size: cover;
+	background-position: center;
+	filter: brightness(50%);
+}
+.highlights{
+	width: 70%;
+	position: relative;
+	display: inline-block;
+	z-index: 11;
+}
+.highlights h3{
+	display: inline;
+	font-size: 2vw;
+	padding: 5px 20px;
+	font-weight: lighter;
+	text-transform: capitalize;
+	border-left: 6px solid var(--prime);
+}
+.highlights h1{
+	/*display: inline;*/
+	font-size: 9vw;
+	text-align: center;
+	font-weight: normal;
+	/*padding: 5px 20px;
+	text-transform: capitalize;
+	border-left: 6px solid;
+	font-size: 4vw;*/
+}	
+.highlights b{
+	color: var(--prime);
+	font-weight: 800;
+	font-family: sans-serif;
+}	
+.highlights tagline{
+	color: #d7d7d7;
+	font-size: 1.2vw;
+	text-align: center;
+	font-weight: normal;
+}
+.highlights .join{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 800;
+	padding: 5px 20px;
+	font-size: 1.5vw;
+	margin-top: 1.2em;
+	color: var(--prime);
+	border: 2px solid var(--prime);
+	border-radius: 50px;
+	background: transparent;
+	text-transform: uppercase;
+	transition: 0.3s ease;
+}
+.highlights .join:hover{
+	color: #fff;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+	background: var(--prime);
+}
+/*---------------------------------------style pt toate sectiunile-------------------------------------*/
+.main{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.main h2{
+	font-size: 2.5vw;
+	position: relative;
+	text-align: center;
+	padding-top: 100px;
+	display: inline-block;
+}
+span{
+	color: var(--prime);
+}
+.main h2:before{
+	position: absolute;
+	content: '';
+	background: var(--prime);
+	height: 3px;
+	width: 30%;
+	right: -15px;
+	bottom: 0;
+	border-radius: 50px;
+}
+.main h6{
+	margin-top: 10px;
+	font-size: 13px;
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+.content{
+	position: relative;
+	display: flex;
+	width: 100%;
+	padding: 0 30px;
+	justify-content: center;
+}
+/*------------------------------------------Login register style -----------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.modificare {
+    height: 100vh; /* Să ocupe întreaga înălțime a paginii */
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Centrează vertical */
+    justify-content: center; /* Centrează orizontal */
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background: #000000;
+    padding: 5px;
+    box-shadow: 0 5px 20px 10px #ffc8241f;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 70px; /* Adaugă o mică distanță în partea de sus */
+}
+
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 5px 20px 10px #ffc8241f;
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+	color: #000000;
+}
+#btn{
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #ff3b00, #ffe600);
+	border-radius: 30px;
+	transition: .5s;
+	
+}
+.input-group{
+	top: 130px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #ff3b00, #ffe600);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	color: #000000;
+}
+.check-box{
+	margin: 30px 10px 30px 0;
+}
+span{
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+#login{
+	left: 50px;
+}
+#register{
+	left: 450px;
+}
+.culoareSelectBox{
+    color: black;
+}
+/* Select box styling */
+.custom-select {
+    display: block;
+    width: 100%; /* Să ocupe întreaga lățime disponibilă */
+    padding: 10px;
+    margin: 10px auto; /* Centrare pe orizontală */
+    border-radius: 30px; /* Colțuri rotunjite */
+    border: 1px solid #999; /* Margine subtilă */
+    background: transparent;
+    color: #777; /* Culoare text */
+    outline: none;
+    text-align: center; /* Aliniere text pe centru */
+    appearance: none; /* Ascunde săgețile implicite ale browserului */
+    -webkit-appearance: none; /* Ascundere pentru Webkit (Chrome, Safari) */
+    -moz-appearance: none; /* Ascundere pentru Firefox */
+}
+
+.custom-select:focus {
+    border-color: #FFDA00; /* Schimbă culoarea marginii la focus */
+    box-shadow: 0 0 5px rgba(255, 59, 0, 0.5);
+}
+
+/* Adăugăm stil pentru săgeată personalizată */
+.custom-select::after {
+    content: '\25BC'; /* Săgeată în jos */
+    font-size: 16px;
+    color: #777;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 8px); /* Centrare verticală */
+    pointer-events: none; /* Săgeata să nu fie interactivă */
+}
+/*----------------------------------select box style------------------------------------------------*/
+.container{
+	margin-bottom: 30px;
+	padding: 32px;
+}
+.select-box{
+	display: flex;
+	width: 400px;
+	flex-direction: column;
+}
+.select-box .options-container{
+	background: transparent;
+	color: #777;
+	max-height: 0;
+	width: 70%;
+	opacity: 0;
+	transition: all 0.4s;
+	border-radius: 8px;
+	overflow: hidden;
+	order: 1;
+}
+.selected{
+	background: transparent;
+	width: 70%;
+	font-size: 14px;
+	border-radius: 8px;
+	margin-bottom: 4px;
+	color: #777;
+	position: relative;
+	order: 0;
+
+}
+.selected::after{
+	content: "";
+	background: url(sageata1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(1);
+	position: absolute;
+	height: 100%;
+	width: 15px;
+	right: 10px;
+	transition: all 0.4s;
+
+}
+.select-box .options-container.active{
+	max-height: 240px;
+	opacity: 1;
+	overflow-y: scroll;
+}
+.select-box .options-container.active + .selected::after{
+	transform: rotateX(180deg);
+	top: -13px;
+}
+/*cev acu scroll la select box, dar nu e cazul la mine*/
+.select-box .options-container::-webkit-scrollbar{
+	width: 8px;
+	background: #28282B;
+	border-radius: 0 8px 8px 0;
+}
+.select-box .options-container::-webkit-scrollbar-thumb{
+	background: #525861;
+	border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected{
+	padding: 12px 24px;
+	cursor: pointer;
+}
+.select-box .option:hover{
+	background: #2d2d2d;
+}
+.select-box label{
+	cursor: pointer;
+	color: #777;
+	font-size: 12px;
+}
+.select-box .option .radio{
+	display: none;
+}
+
+
+
+/*--------------------------------------------pt mobile-------------------------------------------------------*/
+@media screen and (max-width: 900px){
+	.navbar{
+		padding: 0 60px;
+	}
+	.navbar ol{
+		display: none;
+	}
+	.navbar ol.active{
+		top: 60px;
+		left: 0;
+		width: 100%;
+		display: flex;
+		position: fixed;
+		background: #222;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: calc(100% - 60px);
+	}
+	.navbar ol.active li{
+		margin: 8px;
+	}
+	.navbar ol.active li a{
+		font-size: 25px;
+		
+	}
+	.navbar .toggle{
+		height: 25px;
+		width: 25px;
+		margin: auto 0;
+		cursor: pointer;
+		background: url(menubar1.png);
+		background-size: 25px;
+		background-position: center;
+		filter: invert(1);
+		background-repeat: no-repeat;
+	}
+	.navbar .toggle.active{
+		background: url(close.png);
+		background-size: 40px;
+		background-position: center;
+		cursor: pointer;
+		filter: invert(1);
+	}
+	.highlights h3{
+		font-size: 3vw;
+		padding: 5px 10px;
+		border-left: 3px solid var(--prime);
+	}
+	.highlights h1{
+		font-size: 16vw;
+	}
+	.highlights .join{
+		font-size: 1.8vw;
+		border: 1px solid var(--prime);
+	}
+	.main h2{
+		font-size: 1.5rem;
+	}
+	.main h6{
+		font-size: 10px;
+	}
+	.about .content{
+		flex-direction: column;
+	}
+	.workout .content .frame{
+		width: 260px;
+		padding: 18px;
+	}
+	.trainers .content .frame{
+		width: 350px;
+		padding: 15px 15px 40px 15px;
+		margin: 10px 5px;
+	}
+	.trainers .content .frame .box{
+		height: 200px;
+	}
+	.trainers .content .frame a{
+		border: 1.5px solid var(--prime);
+		padding: 3px 15px;
+	}
+	.form-box{
+		width: 380px;
+		height: 480px;
+		position: relative;
+		margin: 30% auto;
+		background: #000000;
+		padding: 5px;
+		box-shadow: 0 5px 20px 10px #ffc8241f;
+		border-radius: 50px;
+		overflow: hidden;
+		margin-top: 150px; /* Adaugă o mică distanță în partea de sus */
+
+	}
+}
+.error{
+background: #F2DEDE;
+color:#A94442;
+padding: 10px;
+width: 95%;
+border-radius: 5px;
+}
+
